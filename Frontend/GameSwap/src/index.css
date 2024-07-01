@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    @apply w-full h-full;
+}
+body {
+    @apply bg-gradient-to-br from-slate-800 from-10% to-slate-900;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+.banner::after{
+content: '|';
+@apply text-white/75;
+animation: blink 1s step-start infinite;
+
+}
+@keyframes blink {
+    50%{
+        opacity: 0%;
+    }
+
+}
+
+.fade-in{
+    animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.display{
+    display: block;
+}
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+.hover-underline-animation::after {
+    @apply bg-white;
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.2s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.inputbar{
+    @apply font-semibold;
+    font-family: monospace;
+    outline:none;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 500px 500px 500px 500px;
+    width: 100%;
+    transition: all 200ms ease-in-out;
+}
+
+.inputbar:focus-visible{
+    color: black;
+    background-color: white;
+}
+
+.fade-left{
+    mask-image: linear-gradient(to left, rgba(255,255,255,0) 5%, black 90%);
+}
+.fade-right{
+    mask-image: linear-gradient(to right, rgba(255,255,255,0) 5%, black 90%);
+}
+
+/* Login */
+.login-input input{
+    @apply font-semibold;
+    font-family: monospace;
+    outline:none;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 500px 500px 500px 500px;
+    width: 100%;
+    transition: all 200ms ease-in-out;
+}
+
+.login-input {
+    position: relative;
+}
+.login-input label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .2s ease;
+}
+
+.login-input input:focus~label,
+.login-input input:valid~label {
+    @apply text-white;
+    top: 1px;
+    font-size: .8em;
+    padding: 0 6px;
+    background: #1b2638;
+}
