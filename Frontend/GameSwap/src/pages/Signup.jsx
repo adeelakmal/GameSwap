@@ -31,6 +31,7 @@ export default function Signup() {
                 type="text"
                 name=""
                 id="signupUsername"
+                placeholder=" "
                 className="p-2 px-3"
                 required
               />
@@ -44,6 +45,7 @@ export default function Signup() {
                 type="email"
                 name=""
                 id="signupEmail"
+                placeholder=" "
                 className="p-2 px-3"
                 required
               />
@@ -57,6 +59,7 @@ export default function Signup() {
                 type="password"
                 name=""
                 id="signupPass"
+                placeholder=" "
                 className="p-2 px-3"
                 required
               />
@@ -70,6 +73,7 @@ export default function Signup() {
                 type="password"
                 name=""
                 id="signupPassCnfrm"
+                placeholder=" "
                 className="p-2 px-3"
                 required
               />

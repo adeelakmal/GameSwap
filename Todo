@@ -1,0 +1,3 @@
+1. Create a route for auth
+2. Implement JWT auth
+3. Add middleware to block unauthorized access to all endpoints routes /api/users

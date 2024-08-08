@@ -31,6 +31,7 @@ export default function Login() {
                 type="email"
                 name=""
                 id="loginEmail"
+                placeholder=" "
                 className="p-2 px-3"
                 required
               />
@@ -44,6 +45,7 @@ export default function Login() {
                 type="password"
                 name=""
                 id="loginPass"
+                placeholder=" "
                 className="p-2 px-3"
                 required
               />

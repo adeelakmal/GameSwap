@@ -120,3 +120,14 @@ animation: blink 1s step-start infinite;
     padding: 0 6px;
     background: #1b2638;
 }
+
+.login-input input:not(:focus):invalid:not(:placeholder-shown)~label{
+    @apply text-red-700;
+    top: 1px;
+    font-size: .8em;
+    padding: 0 6px;
+    background: #1b2638;
+}
+.login-input input:not(:focus):invalid:not(:placeholder-shown) {
+    @apply border-red-700;
+}
